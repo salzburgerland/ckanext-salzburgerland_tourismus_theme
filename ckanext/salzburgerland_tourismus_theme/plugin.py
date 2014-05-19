@@ -23,3 +23,10 @@ class SalzburgerlandTourismusThemePlugin(plugins.SingletonPlugin):
         # Add this plugin's public dir to CKAN's extra_public_paths, so
         # that CKAN will use this plugin's custom static files.
         toolkit.add_public_directory(config, 'public')
+
+        # Register this plugin's fanstatic directory with CKAN.
+        # Here, 'fanstatic' is the path to the fanstatic directory
+        # (relative to this plugin.py file), and 'example_theme' is the name
+        # that we'll use to refer to this fanstatic directory from CKAN
+        # templates.
+        toolkit.add_resource('fanstatic', 'salzburgerland_tourismus_theme')
