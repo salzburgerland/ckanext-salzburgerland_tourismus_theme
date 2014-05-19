@@ -26,5 +26,6 @@ setup(
         [ckan.plugins]
         # Add plugins here, e.g.
         # myplugin=ckanext.salzburgerland_tourismus_theme.plugin:PluginClass
+        salzburgerland_tourismus_theme=ckanext.salzburgerland_tourismus_theme.plugin:SalzburgerlandTourismusThemePlugin
     ''',
 )
